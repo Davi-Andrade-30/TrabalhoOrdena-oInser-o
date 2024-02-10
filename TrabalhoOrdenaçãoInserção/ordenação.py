@@ -7,3 +7,16 @@ def insertion_sort(A):
             i = i - 1  # Decrementamos i para continuar a comparação com os elementos restantes da parte ordenada da lista
         A[i + 1] = chave  # Inserimos a "chave" na posição correta na parte ordenada da lista
     return A  # Retornamos a lista A que agora está ordenada
+
+def main():
+    # Lista de exemplo
+    A = [5, 2, 4, 6, 1, 3]
+    print("Lista original:", A)
+
+    # Ordenando a lista
+    A = insertion_sort(A)
+    print("Lista ordenada:", A)
+
+# Chamando a função main
+if __name__ == "__main__":
+    main()
